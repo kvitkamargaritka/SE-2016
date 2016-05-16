@@ -1,5 +1,5 @@
 $(document).ready(function() {
 
-	// go js
+	$('.player').mb_YTPlayer();
 
 });
