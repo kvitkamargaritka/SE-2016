@@ -130,9 +130,13 @@ a { color: #000; text-decoration: none; }
 .partner { margin: 0 15px 50px; width: 200px; text-align: center; font-size: 24px; }
 .partner p { padding-top: 20px; }
 
+.map { width: 100%; }
+
 .data-choice { border: 1px solid #ebebeb; -webkit-border-radius: 40px; border-radius: 40px; margin: 60px 0 40px; }
 .data-choice__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .data-choice__el { padding: 14px 19px; }
+
+.is-active { background-color: #107063; color: #fff; }
 
 .top-line { padding: 10px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
