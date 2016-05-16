@@ -39,15 +39,110 @@ $pink: #da295b
 +font('museo700', museo700-regular)
 +font('museo900', museo900-regular)
 
+h1
+  font-size: 36px
+
+h5
+  font-size: 24px
+
+h6
+  font-size: 18px
+
+
 body
-  font-family: 'museo300', Arial, sans-serif
-  font-size: 12px
+  font-family: Arial, sans-serif
+  font-size: 16px
   line-height: 1.4
   color: #000
 
 a
   color: #000
   text-decoration: none
+
+.pink
+  color: $pink
+
+.green
+  color: $greenLight
+
+.btn
+  display: inline-block
+  text-transform: uppercase
+  cursor: pointer
+  height: 45px
+  line-height: 45px
+  font-size: 18px
+  padding: 0 35px
+  margin: 20px 0
+
+  &_pink
+    background-color: $pink
+    color: #fff
+
+  &_white
+    background-color: #fff
+    color: $pink
+
+  &_big
+    padding: 0 50px
+    font-size: 24px
+
+.line
+  background: url("../img/dot.png") repeat
+  width: 920px
+  height: 2px
+  margin: 75px auto
+
+.ico
+  display: inline-block
+  vertical-align: middle
+
+  &_tw
+    background: url("../img/social_media_sprite.svg")
+    background-position: 0 0
+    background-size: cover
+    width: 33px
+    height: 33px
+
+  &_tw-small
+    background: url("../img/social_media_sprite.svg")
+    background-position: 0 0
+    background-size: cover
+    width: 18px
+    height: 18px
+
+  &_fb
+    background: url("../img/social_media_sprite.svg")
+    background-position: 84px 0
+    background-size: cover
+    width: 33px
+    height: 33px
+
+  &_fb-small
+    background: url("../img/social_media_sprite.svg")
+    background-position: 45px 0
+    background-size: cover
+    width: 18px
+    height: 18px
+
+  &_vk
+    background: url("../img/social_media_sprite.svg")
+    background-position: 33px 0
+    background-size: cover
+    width: 33px
+    height: 33px
+
+  &_vk-small
+    background: url("../img/social_media_sprite.svg")
+    background-position: 18px 0
+    background-size: cover
+    width: 18px
+    height: 18px
+
+.row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
 
 .container
   width: 100%
@@ -62,13 +157,202 @@ a
     display: flex
 
   &__el
-    padding: 10px 10px
+    margin-right: 50px
 
   &__link
+    display: block
     font-size: 20px
 
 .lang
+  text-transform: uppercase
+  font-size: 18px
 
   &__list
     display: flex
 
+  &__el
+    margin-left: 34px
+
+.title
+  font-size: 110px
+  background-color: #fff
+
+.descr
+  font-size: 20px
+  p
+    margin-bottom: 20px
+
+.social
+
+  &_small
+    .social__list
+      justify-content: center
+
+    .social__el
+      margin-left: 9px
+      &:first-child
+        margin-left: 0
+
+  &__list
+    display: flex
+
+  &__el
+    margin-left: 15px
+
+  &__link
+    display: block
+
+.days
+  display: flex
+  justify-content: space-between
+
+.day
+  width: 20%
+
+  .vertical-list
+
+    &__item
+      margin-left: 20px
+      margin-top: 20px
+
+  h5
+    color: $greenLight
+    margin-bottom: 20px
+
+  &:last-child
+    h5
+      color: $pink
+
+    p
+      margin: 0
+
+    .vertical-list
+
+      &__item
+        margin: 0
+
+      &__el
+        margin-bottom: 20px
+
+  p
+    margin: 35px 0
+
+.schedule
+  display: flex
+  justify-content: space-between
+
+  .col
+    width: 30%
+
+  h5
+    background-color: $grey
+    padding: 10px 15px
+    margin-bottom: 45px
+
+  .vertical-list
+
+    &__el
+      margin-bottom: 50px
+
+.sale
+  padding: 68px 0 85px
+  margin: 0 auto
+  width: 900px
+  color: #fff
+  font-size: 30px
+  text-align: center
+  background-color: $green
+
+  &__top
+    text-transform: uppercase
+    margin-bottom: 55px
+
+  &__center
+    margin-bottom: 35px
+
+.item
+  width: 220px
+  text-align: center
+  color: #fff
+
+  &_1
+    background: url("../img/speaker-1.jpg") center
+    background-size: cover
+
+  &_2
+    background: url("../img/speaker-2.jpg") center
+    background-size: cover
+
+  &_3
+    background: url("../img/speaker-3.jpg") center
+    background-size: cover
+
+  &_4
+    background: url("../img/speaker-4.jpg") center
+    background-size: cover
+
+  &_5
+    background: url("../img/speaker-5.jpg") center
+    background-size: cover
+
+  &_6
+    background: url("../img/speaker-6.jpg") center
+    background-size: cover
+
+  &__top
+    padding: 155px 0
+
+  &__bottom
+    padding: 9px 0
+    background-color: rgba(0,0, 0, 0.7)
+
+    p
+      opacity: .7
+
+.horizontal-list
+
+  &__item
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+  &__el
+    margin: 0 5px
+
+.circle
+  width: 200px
+  height: 200px
+  background-color: $greyDark
+  border-radius: 50%
+
+.section.section_about
+  padding-bottom: 0
+
+.section-partners
+
+  .row
+    flex-wrap: wrap
+
+    &:first-child
+      justify-content: center
+
+.partner
+  margin: 0 15px 50px
+  width: 200px
+  text-align: center
+  font-size: 24px
+
+  p
+    padding-top: 20px
+
+.data-choice
+  border: 1px solid $grey
+  border-radius: 40px
+  margin: 60px 0 40px
+
+  &__list
+    display: flex
+    justify-content: center
+
+  &__el
+    padding: 14px 19px
