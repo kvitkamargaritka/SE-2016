@@ -28,9 +28,47 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+$green: #107063
+$greenLight: #227e75
+$grey: #ebebeb
+$greyDark: #959595
+$pink: #da295b
+
++font('museo300', museo300-regular)
++font('museo500', museo500-regular)
++font('museo700', museo700-regular)
++font('museo900', museo900-regular)
+
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
-	
-// common blocks
+  font-family: 'museo300', Arial, sans-serif
+  font-size: 12px
+  line-height: 1.4
+  color: #000
+
+a
+  color: #000
+  text-decoration: none
+
+.container
+  width: 100%
+  max-width: 1200px
+  padding: 0 15px
+  margin: 0 auto
+  box-sizing: border-box
+
+.user-menu
+
+  &__list
+    display: flex
+
+  &__el
+    padding: 10px 10px
+
+  &__link
+    font-size: 20px
+
+.lang
+
+  &__list
+    display: flex
+

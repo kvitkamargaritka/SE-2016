@@ -29,7 +29,25 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: "museo300"; src: url("fonts/museo300-regular.eot"); src: url("fonts/museo300-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo300-regular.woff2") format("woff2"), url("fonts/museo300-regular.woff") format("woff"), url("fonts/museo300-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo500"; src: url("fonts/museo500-regular.eot"); src: url("fonts/museo500-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo500-regular.woff2") format("woff2"), url("fonts/museo500-regular.woff") format("woff"), url("fonts/museo500-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo700"; src: url("fonts/museo700-regular.eot"); src: url("fonts/museo700-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo700-regular.woff2") format("woff2"), url("fonts/museo700-regular.woff") format("woff"), url("fonts/museo700-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo900"; src: url("fonts/museo900-regular.eot"); src: url("fonts/museo900-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo900-regular.woff2") format("woff2"), url("fonts/museo900-regular.woff") format("woff"), url("fonts/museo900-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-family: "museo300", Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #000; }
+
+a { color: #000; text-decoration: none; }
+
+.container { width: 100%; max-width: 1200px; padding: 0 15px; margin: 0 auto; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.user-menu__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.user-menu__el { padding: 10px 10px; }
+.user-menu__link { font-size: 20px; }
+
+.lang__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.top-line { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.header__bottom { background: url("../img/se-image.jpg"); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
