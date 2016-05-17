@@ -34,23 +34,49 @@ $grey: #ebebeb
 $greyDark: #959595
 $pink: #da295b
 
-+font('museo300', museo300-regular)
-+font('museo500', museo500-regular)
-+font('museo700', museo700-regular)
-+font('museo900', museo900-regular)
++font('museo100', museosanscyrl-100)
++font('museo300', museosanscyrl-300)
++font('museo300ital', museosanscyrl-300italic)
++font('museo500', museosanscyrl-500)
++font('museo500ital', museosanscyrl-500italic)
++font('museo700', museosanscyrl-700)
++font('museo900', museosanscyrl-900)
+
+=h100
+  font-family: 'museo100', Arial, sans-serif
+
+=h300
+  font-family: 'museo300', Arial, sans-serif
+
+=h300i
+  font-family: 'museo300ital', Arial, sans-serif
+
+=h500
+  font-family: 'museo500', Arial, sans-serif
+
+=h500i
+  font-family: 'museo500ital', Arial, sans-serif
+
+=h700
+  font-family: 'museo700', Arial, sans-serif
+
+=h900
+  font-family: 'museo900', Arial, sans-serif
 
 h1
   font-size: 36px
 
 h5
+  +h500
   font-size: 24px
 
 h6
+  +h300
   font-size: 18px
 
 
 body
-  font-family: Arial, sans-serif
+  +h300
   font-size: 16px
   line-height: 1.4
   color: #000
@@ -66,6 +92,7 @@ a
   color: $greenLight
 
 .btn
+  +h500
   display: inline-block
   text-transform: uppercase
   cursor: pointer
@@ -175,10 +202,12 @@ a
     margin-left: 34px
 
 .title
+  +h700
   font-size: 110px
   background-color: #fff
 
 .descr
+  +h100
   font-size: 20px
   p
     margin-bottom: 20px
@@ -236,7 +265,11 @@ a
         margin-bottom: 20px
 
   p
+    +h100
     margin: 35px 0
+
+.ital
+  +h500i
 
 .schedule
   display: flex
@@ -246,6 +279,7 @@ a
     width: 30%
 
   h5
+    +h300
     background-color: $grey
     padding: 10px 15px
     margin-bottom: 45px
@@ -253,10 +287,18 @@ a
   .vertical-list
 
     &__el
+      font-size: 18px
       margin-bottom: 50px
 
+.time
+  +h500
+
+.h100
+  +h100
+  margin-top: 25px
+
 .sale
-  padding: 68px 0 85px
+  padding: 60px 0 80px
   margin: 0 auto
   width: 900px
   color: #fff
@@ -266,10 +308,11 @@ a
 
   &__top
     text-transform: uppercase
-    margin-bottom: 55px
+    margin-bottom: 40px
 
   &__center
-    margin-bottom: 35px
+    +h100
+    margin-bottom: 25px
 
 .item
   width: 220px
@@ -308,7 +351,11 @@ a
     background-color: rgba(0,0, 0, 0.7)
 
     p
-      opacity: .7
+      opacity: .85
+
+  &__descr
+    +h100
+    font-size: 13px
 
 .horizontal-list
 
@@ -355,7 +402,8 @@ a
   display: none
 
 .data-choice
-
+  +h300
+  font-size: 25px
   margin: 60px 0 40px
 
   &__list
@@ -373,3 +421,6 @@ a
   .is-active
     background-color: $green
     color: #fff
+
+  span
+    +h300i

@@ -29,17 +29,20 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-@font-face { font-family: "museo300"; src: url("fonts/museo300-regular.eot"); src: url("fonts/museo300-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo300-regular.woff2") format("woff2"), url("fonts/museo300-regular.woff") format("woff"), url("fonts/museo300-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "museo500"; src: url("fonts/museo500-regular.eot"); src: url("fonts/museo500-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo500-regular.woff2") format("woff2"), url("fonts/museo500-regular.woff") format("woff"), url("fonts/museo500-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "museo700"; src: url("fonts/museo700-regular.eot"); src: url("fonts/museo700-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo700-regular.woff2") format("woff2"), url("fonts/museo700-regular.woff") format("woff"), url("fonts/museo700-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "museo900"; src: url("fonts/museo900-regular.eot"); src: url("fonts/museo900-regular.eot?#iefix") format("embedded-opentype"), url("fonts/museo900-regular.woff2") format("woff2"), url("fonts/museo900-regular.woff") format("woff"), url("fonts/museo900-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo100"; src: url("fonts/museosanscyrl-100.eot"); src: url("fonts/museosanscyrl-100.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-100.woff2") format("woff2"), url("fonts/museosanscyrl-100.woff") format("woff"), url("fonts/museosanscyrl-100.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo300"; src: url("fonts/museosanscyrl-300.eot"); src: url("fonts/museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300.woff2") format("woff2"), url("fonts/museosanscyrl-300.woff") format("woff"), url("fonts/museosanscyrl-300.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo300ital"; src: url("fonts/museosanscyrl-300italic.eot"); src: url("fonts/museosanscyrl-300italic.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-300italic.woff2") format("woff2"), url("fonts/museosanscyrl-300italic.woff") format("woff"), url("fonts/museosanscyrl-300italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo500"; src: url("fonts/museosanscyrl-500.eot"); src: url("fonts/museosanscyrl-500.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-500.woff2") format("woff2"), url("fonts/museosanscyrl-500.woff") format("woff"), url("fonts/museosanscyrl-500.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo500ital"; src: url("fonts/museosanscyrl-500italic.eot"); src: url("fonts/museosanscyrl-500italic.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-500italic.woff2") format("woff2"), url("fonts/museosanscyrl-500italic.woff") format("woff"), url("fonts/museosanscyrl-500italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo700"; src: url("fonts/museosanscyrl-700.eot"); src: url("fonts/museosanscyrl-700.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-700.woff2") format("woff2"), url("fonts/museosanscyrl-700.woff") format("woff"), url("fonts/museosanscyrl-700.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "museo900"; src: url("fonts/museosanscyrl-900.eot"); src: url("fonts/museosanscyrl-900.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl-900.woff2") format("woff2"), url("fonts/museosanscyrl-900.woff") format("woff"), url("fonts/museosanscyrl-900.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 h1 { font-size: 36px; }
 
-h5 { font-size: 24px; }
+h5 { font-family: "museo500", Arial, sans-serif; font-size: 24px; }
 
-h6 { font-size: 18px; }
+h6 { font-family: "museo300", Arial, sans-serif; font-size: 18px; }
 
-body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #000; }
+body { font-family: "museo300", Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #000; }
 
 a { color: #000; text-decoration: none; }
 
@@ -47,7 +50,7 @@ a { color: #000; text-decoration: none; }
 
 .green { color: #227e75; }
 
-.btn { display: inline-block; text-transform: uppercase; cursor: pointer; height: 45px; line-height: 45px; font-size: 18px; padding: 0 35px; margin: 20px 0; }
+.btn { font-family: "museo500", Arial, sans-serif; display: inline-block; text-transform: uppercase; cursor: pointer; height: 45px; line-height: 45px; font-size: 18px; padding: 0 35px; margin: 20px 0; }
 .btn_pink { background-color: #da295b; color: #fff; }
 .btn_white { background-color: #fff; color: #da295b; }
 .btn_big { padding: 0 50px; font-size: 24px; }
@@ -74,9 +77,9 @@ a { color: #000; text-decoration: none; }
 .lang__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 .lang__el { margin-left: 34px; }
 
-.title { font-size: 110px; background-color: #fff; }
+.title { font-family: "museo700", Arial, sans-serif; font-size: 110px; background-color: #fff; }
 
-.descr { font-size: 20px; }
+.descr { font-family: "museo100", Arial, sans-serif; font-size: 20px; }
 .descr p { margin-bottom: 20px; }
 
 .social_small .social__list { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
@@ -95,16 +98,22 @@ a { color: #000; text-decoration: none; }
 .day:last-child p { margin: 0; }
 .day:last-child .vertical-list__item { margin: 0; }
 .day:last-child .vertical-list__el { margin-bottom: 20px; }
-.day p { margin: 35px 0; }
+.day p { font-family: "museo100", Arial, sans-serif; margin: 35px 0; }
+
+.ital { font-family: "museo500ital", Arial, sans-serif; }
 
 .schedule { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 .schedule .col { width: 30%; }
-.schedule h5 { background-color: #ebebeb; padding: 10px 15px; margin-bottom: 45px; }
-.schedule .vertical-list__el { margin-bottom: 50px; }
+.schedule h5 { font-family: "museo300", Arial, sans-serif; background-color: #ebebeb; padding: 10px 15px; margin-bottom: 45px; }
+.schedule .vertical-list__el { font-size: 18px; margin-bottom: 50px; }
 
-.sale { padding: 68px 0 85px; margin: 0 auto; width: 900px; color: #fff; font-size: 30px; text-align: center; background-color: #107063; }
-.sale__top { text-transform: uppercase; margin-bottom: 55px; }
-.sale__center { margin-bottom: 35px; }
+.time { font-family: "museo500", Arial, sans-serif; }
+
+.h100 { font-family: "museo100", Arial, sans-serif; margin-top: 25px; }
+
+.sale { padding: 60px 0 80px; margin: 0 auto; width: 900px; color: #fff; font-size: 30px; text-align: center; background-color: #107063; }
+.sale__top { text-transform: uppercase; margin-bottom: 40px; }
+.sale__center { font-family: "museo100", Arial, sans-serif; margin-bottom: 25px; }
 
 .item { width: 220px; text-align: center; color: #fff; }
 .item_1 { background: url("../img/speaker-1.jpg") center; background-size: cover; }
@@ -115,7 +124,8 @@ a { color: #000; text-decoration: none; }
 .item_6 { background: url("../img/speaker-6.jpg") center; background-size: cover; }
 .item__top { padding: 155px 0; }
 .item__bottom { padding: 9px 0; background-color: rgba(0, 0, 0, 0.7); }
-.item__bottom p { opacity: 0.7; }
+.item__bottom p { opacity: 0.85; }
+.item__descr { font-family: "museo100", Arial, sans-serif; font-size: 13px; }
 
 .horizontal-list__item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 .horizontal-list__el { margin: 0 5px; }
@@ -136,10 +146,11 @@ a { color: #000; text-decoration: none; }
 
 .ytpicon { display: none; }
 
-.data-choice { margin: 60px 0 40px; }
+.data-choice { font-family: "museo300", Arial, sans-serif; font-size: 25px; margin: 60px 0 40px; }
 .data-choice__list { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border: 1px solid #ebebeb; -webkit-border-radius: 40px; border-radius: 40px; }
 .data-choice__el { padding: 15px 45px; cursor: pointer; -webkit-border-radius: 40px; border-radius: 40px; }
 .data-choice .is-active { background-color: #107063; color: #fff; }
+.data-choice span { font-family: "museo300ital", Arial, sans-serif; }
 
 .top-line { padding: 10px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -151,6 +162,7 @@ a { color: #000; text-decoration: none; }
 .section__title { color: #107063; }
 .section__descr { font-size: 24px; }
 
+.footer { font-family: "museo500", Arial, sans-serif; font-size: 24px; }
 .footer__top { text-align: center; }
 .footer__bottom { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 25px 0; }
 .footer__left p { margin-top: 10px; }
